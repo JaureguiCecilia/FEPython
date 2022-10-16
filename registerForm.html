@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Wine shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/bf8de775bd.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="CSS/main.css">
+  <!--este es enlace con la pagina de css-->
+</head>
+
+<!--body-->
+<body>
+  <!--header se centro el h1 y se le coloco el fondo de color negro css-->
+  <header>
+    <!--nav con boostrap tomado del ejemplo de w3school-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Wine shop</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--nav se coloco en clases para separarlos y trabajarlos en css-->
+    <!-- <nav>
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="about.html">Productos</a>
+        <a class="nav" href="Register.html">Registrese</a>
+        <a class="nav" href="contact.html">Contacto</a>
+        <a class="nav" href="contact.html">Sucursales</a>
+    </nav>-->
+    <!--este h1 se centro y se le cambio el color de la letra en css-->
+    <h1>Encuentra los mejores vinos con nosotros</h1>
+
+  </header>
+
+  <body class="container-fluid" id="regForm">
+    
+    <div class="container">
+      <h2>Regístrate</h2>
+      <div class="row">
+        
+        <div class="col-lg-6" id="contact">
+          
+          <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <div>
+              
+              <label>Nombre y Apellido </label>
+              <input class="input-group" type="text" name="name">
+            </div>
+            <div class="input-group">
+              <label>Genero</label>
+              <select class="form-control input-sm selectpicker show-menu-arrow" id="docType" name="docType"
+                title="Genero" data-fv-field="docType" tabindex="0">
+                <option value="DU">Masculino</option>
+                <option value="LC">Femenino</option>
+                <option value="CL">Otro</option>
+              </select>
+            </div>
+            <p>
+            <div>
+              <label>Numero de Documento</label>
+              <input class="input-group" type="number" name="docNum">
+            </div>
+            </p>
+            <div>
+              <label>Correo Electrónico</label>
+              <input class="input-group" type="email" name="email">
+            </div>
+            <div>
+              <label>Contraseña</label>
+              <input class="input-group" type="password" name="password">
+            </div>
+            <div>
+              <label>Confirmar Contraseña</label>
+              <input class="input-group" type="password" name="repassword">
+            </div>
+            <button type="submit">REGISTRAR</button>
+          </form>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <footer>
+
+      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-" aria-hidden="true"></i></a>
+      <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+  
+      <p> Derechos Reservados @2020 </p>
+      <br>
+  
+    </footer>
+  </body>
+
+</html>

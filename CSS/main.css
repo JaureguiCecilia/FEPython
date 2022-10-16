@@ -1,88 +1,83 @@
 * {
     margin: 0;
-   padding: 0;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   }
-   
-   /*REVISAR ESTA CLASE DE IMAGENES PORQUE NO SE VE EN LA PAGINA*/
-   
-   .imgindex, .imgnuestrosvinos{
-    width: 40%;
-   }
-   
-   h1 {
-       text-align: center;
-   }
-   
-   header {
-       background-color: maroon;
-       color: white;
-       width: 100%;
-   }
-   
-   .nav {
-       background-color: maroon;
-       color: white;
-       text-decoration: none;
-       padding: 5px;
-       margin: 5px;
-       border-radius: 5px;
-       font-size: 1.0vw;
-       left: 0;
-   }
-   
-   footer{
-   background-color: black;
-   color: white;
-   width: 100%;
-   text-align: center;
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   padding: 20px;
-   height: 50px;
-   margin: top 0;
-   }
-   
-   /*FORMULARIO TODAVIA NO SE VINCULA CON EL HTML TENGO QUE REVISAR*/
-   
-   label, input{
-       font-size: 1.0vw;
-   }
-   
-   input[type=text],input[type=password],input[type=date],input[type=email],input[type=nunber],input[type=url],input[type=text],input[type=textArea], select {
-      width: 80%;
-      padding: 1vw;
-      margin: 1vw; 
-      display: inline-block;
-      border: 1vw;
-      border-radius: 4px;
-      box-sizing: border-box;
-   }
-   
-   input[type=submit] {
-   width: 100%;
-   background-color: brown;
-   color: white;
-   padding: 14px 20px;
-   margin: 8px 0;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
-   }
-   
-   input[type=submit]:hover {
-       background-color: brown;
-   }
-   
-   .formulario{
-       border-radius: 5px;
-       background-color:bisque ;
-       padding: 2%;
-       margin: 1% 20%;
-   }
-   
-   /*ES EL RECUADRO DONDE SE COLOCA LOS COMENTARIOS REVISAR SI ESTA EN EL HTML*/
-   textarea {
-       width: 60%;
-   }
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {
+    /*background-color: maroon;*/
+    background-color: #762057;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.nav {
+    /*background-color: maroon;*/
+    background-color: #762057;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.0vw;
+    left: 0;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+    height: 70px;
+    margin-top: 0;
+}
+
+/* FORMULARIO */
+h2,
+label {
+    color: rgb(164, 100, 141);
+    text-align: center;
+}
+
+#regForm input,
+#regForm textarea,
+#regForm select {
+    background-color: white;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 50px;
+    max-width: 450px;
+    width: 100%;
+    height: 25px;
+    border: none;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(164, 100, 141);
+    color: aliceblue;
+    border: none;
+    border-radius: 0;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+button,
+select {
+    text-transform: none;
+}
