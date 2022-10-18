@@ -18,51 +18,23 @@
 </head>
 
 <!--body-->
+
 <body>
   <!--header se centro el h1 y se le coloco el fondo de color negro css-->
-  <header>
-    <!--nav con boostrap tomado del ejemplo de w3school-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Wine shop</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!--nav se coloco en clases para separarlos y trabajarlos en css-->
-    <!-- <nav>
-        <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="about.html">Productos</a>
-        <a class="nav" href="Register.html">Registrese</a>
-        <a class="nav" href="contact.html">Contacto</a>
-        <a class="nav" href="contact.html">Sucursales</a>
-    </nav>-->
-    <!--este h1 se centro y se le cambio el color de la letra en css-->
-    <h1>Encuentra los mejores vinos con nosotros</h1>
-
+  <header id="jsheader">
   </header>
 
   <body class="container-fluid" id="regForm">
-    
+
     <div class="container">
       <h2>Regístrate</h2>
       <div class="row">
-        
+
         <div class="col-lg-6" id="contact">
-          
+
           <form action="/users/register" method="POST" enctype="multipart/form-data">
             <div>
-              
+
               <label>Nombre y Apellido </label>
               <input class="input-group" type="text" name="name">
             </div>
@@ -99,19 +71,10 @@
         </div>
       </div>
     </div>
-  
-    <footer>
 
-      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-" aria-hidden="true"></i></a>
-      <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-      <a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-  
-      <p> Derechos Reservados @2020 </p>
-      <br>
-  
+    <footer id="jsfooter">
     </footer>
+    <script src="JS/index.js"></script>
   </body>
 
 </html>
