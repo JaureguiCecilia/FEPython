@@ -15,9 +15,10 @@ var header=`
       </ul>
     </div>
   </nav>
+  
   <div>
-  <h1>Encuentra los mejores vinos con nosotros</h1>
-</div>
+      <h1>Encuentra los mejores vinos con nosotros</h1>
+    </div>
   `
 
   document.getElementById("jsheader").innerHTML=header;

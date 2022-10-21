@@ -32,38 +32,42 @@
 
         <div class="col-lg-6" id="contact">
 
-          <form action="/users/register" method="POST" enctype="multipart/form-data">
+          <form action="show_data.html" target="_blank">
             <div>
-
               <label>Nombre y Apellido </label>
-              <input class="input-group" type="text" name="name">
+              <input class="input-group" type="text" name="name" placeholder="Ingrese su nombre">
             </div>
-            <div class="input-group">
+            <div class="input-group" >
               <label>Genero</label>
-              <select class="form-control input-sm selectpicker show-menu-arrow" id="docType" name="docType"
-                title="Genero" data-fv-field="docType" tabindex="0">
-                <option value="DU">Masculino</option>
-                <option value="LC">Femenino</option>
-                <option value="CL">Otro</option>
+              <select id="gender" name="gender"
+                title="Genero" data-fv-field="gender" tabindex="0" >
+                <option value="X">Seleccione...</option>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="O">Otro</option>
               </select>
             </div>
             <p>
-            <div>
+            <div whidth="100%">
               <label>Numero de Documento</label>
-              <input class="input-group" type="number" name="docNum">
+              <input class="input-group" type="number" name="docNum" placeholder="Ingrese su Número de documento">
             </div>
-            </p>
+            </p>            
+            <div >
+              <label>Fecha de Nacimiento</label>
+              <input aria-invalid="true" type="date">
+            </div>
             <div>
               <label>Correo Electrónico</label>
-              <input class="input-group" type="email" name="email">
+              <input class="input-group" type="email" name="email" placeholder="Ingrese su correo electrónico">
             </div>
             <div>
               <label>Contraseña</label>
-              <input class="input-group" type="password" name="password">
+              <input class="input-group" type="password" name="password" placeholder="******">
             </div>
             <div>
               <label>Confirmar Contraseña</label>
-              <input class="input-group" type="password" name="repassword">
+              <input class="input-group" type="password" name="repassword" placeholder="******">
             </div>
             <button type="submit">REGISTRAR</button>
           </form>

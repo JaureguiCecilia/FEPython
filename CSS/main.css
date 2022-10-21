@@ -193,8 +193,9 @@ label {
     border: none;
     margin-bottom: 20px;
     padding-left: 30px;
-    color: #000;
+    color: rgb(71, 67, 67);
     box-sizing: border-box;
+    font-size: small;
 }
 
 button {
