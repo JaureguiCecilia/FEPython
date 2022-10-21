@@ -216,3 +216,80 @@ button,
 select {
     text-transform: none;
 }
+.tarjetas{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    align-items: center;
+   justify-content: center;
+}
+.tarjetaproducto{
+    position:relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    background-color: #fafafa;
+    border: 2px solid #eeeef0;
+    border-radius: 5px;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    flex-basis: 33.33333%;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.25rem;
+    margin: 25px;
+}
+.tarjetaproducto:hover{
+    opacity: 0.9;
+}
+.nomprod{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 800; 
+    text-transform: uppercase;
+    margin: 7px;
+    height: 50px;
+}
+.descprod{
+    color: #8b8c90;
+    text-align: justify;
+    padding: 0 12px;
+    font-size: 0.6em;
+    margin:10px 0 10px 0; 
+}
+.precprod {
+    color: #762057;
+    font-size: 1em;
+    text-align: justify;
+    padding: 0 15px;
+    width: 35%;
+    display:inline-block;
+    margin: 14px 0 18px;
+}
+.imgprod{
+    border: 2px solid #eeeef0;
+    border-radius: 5px;  
+    width: 100%;
+}
+.tarjetaproducto button {
+    border: none;
+    border-radius: 50%;
+    outline: 0;
+    padding: 2px 0 0 1.5px;
+    background-color: #762057;
+    /* text-align: center; */
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+  
+.tarjetaproducto button:hover {
+    opacity: 0.7;
+}  
+.contboton{
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;    
+}
