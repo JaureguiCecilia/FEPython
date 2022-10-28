@@ -36,5 +36,93 @@ var header=`
   <br>
 </div>
 `
-
+/* https://mocki.io/v1/d1d88eb1-340f-4185-97cb-a165d0aba995 */
 document.getElementById("jsfooter").innerHTML=footer;
+fetch('https://mocki.io/v1/d1d88eb1-340f-4185-97cb-a165d0aba995')
+  .then(response => response.json())
+  .then(response => {
+    t1=document.getElementById("c1");
+    t1.innerHTML=`<img class="imgprod"src="${response.vinos[0].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[0].nombre}</h1>
+    <p class="precprod">${response.vinos[0].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t2=document.getElementById("c2");
+    t2.innerHTML=`<img class="imgprod"src="${response.vinos[1].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[1].nombre}</h1>
+    <p class="precprod">${response.vinos[1].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t3=document.getElementById("c3");
+    t3.innerHTML=`<img class="imgprod"src="${response.vinos[2].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[2].nombre}</h1>
+    <p class="precprod">${response.vinos[2].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t4=document.getElementById("c4");
+    t4.innerHTML=`<img class="imgprod"src="${response.vinos[3].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[3].nombre}</h1>
+    <p class="precprod">${response.vinos[3].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t5=document.getElementById("c5");
+    t5.innerHTML=`<img class="imgprod"src="${response.vinos[4].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[4].nombre}</h1>
+    <p class="precprod">${response.vinos[4].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t6=document.getElementById("c6");
+    t6.innerHTML=`<img class="imgprod"src="${response.vinos[5].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[5].nombre}</h1>
+    <p class="precprod">${response.vinos[5].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t7=document.getElementById("c7");
+    t7.innerHTML=`<img class="imgprod"src="${response.vinos[6].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[6].nombre}</h1>
+    <p class="precprod">${response.vinos[6].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t8=document.getElementById("c8");
+    t8.innerHTML=`<img class="imgprod"src="${response.vinos[7].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[7].nombre}</h1>
+    <p class="precprod">${response.vinos[7].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t9=document.getElementById("c9");
+    t9.innerHTML=`<img class="imgprod"src="${response.vinos[8].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[8].nombre}</h1>
+    <p class="precprod">${response.vinos[8].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t10=document.getElementById("c10");
+    t10.innerHTML=`<img class="imgprod"src="${response.vinos[9].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[9].nombre}</h1>
+    <p class="precprod">${response.vinos[9].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t11=document.getElementById("c11");
+    t11.innerHTML=`<img class="imgprod"src="${response.vinos[10].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[10].nombre}</h1>
+    <p class="precprod">${response.vinos[10].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+    t12=document.getElementById("c12");
+    t12.innerHTML=`<img class="imgprod"src="${response.vinos[11].imagen}" alt="vino">
+    <h1 class="nomprod">${response.vinos[11].nombre}</h1>
+    <p class="precprod">${response.vinos[11].precio}</p>
+    <div class="contboton">
+      <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
+    </div>`
+  })

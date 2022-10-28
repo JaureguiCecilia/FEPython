@@ -239,9 +239,12 @@ select {
     padding-right: 0.25rem;
     padding-top: 0.25rem;
     margin: 25px;
+    transform: translateY(0);
+    transition: .3s ease-in-out;
 }
 .tarjetaproducto:hover{
     opacity: 0.9;
+    transform: translateY(-10px);
 }
 .nomprod{
     text-align: center;
