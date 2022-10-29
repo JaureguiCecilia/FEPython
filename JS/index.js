@@ -126,3 +126,48 @@ fetch('https://mocki.io/v1/d1d88eb1-340f-4185-97cb-a165d0aba995')
       <button class="botoncarrito"><img src="images/shoppingcart.png" alt="Agregar al carrito"></button>
     </div>`
   })
+function validarenviar(){
+  if(document.formulario.name.value.length <= 0){
+    alert("Ingrese su nombre");
+    document.formulario.name.focus();
+    return 0;
+  }
+  if (document.formulario.gender.selectedIndex == 0) {
+    alert("Debe seleccionar una opcion")
+    document.formulario.gender.focus()
+    return 0;
+  }
+  if(document.formulario.docNum.value.length<=0){
+    alert("Ingrese su número de documento");
+    document.formulario.docNum.focus();
+    return 0;
+  }
+  if(document.formulario.docNum.value.length<=0){
+    alert("Ingrese su número de documento");
+    document.formulario.docNum.focus();
+    return 0;
+  }
+  if(document.formulario.email.value.length<=0){
+    alert("Ingrese su email");
+    document.formulario.email.focus();
+    return 0;
+  }
+  if(document.formulario.password.value.length<=0){
+    alert("Ingrese su contraseña");
+    document.formulario.password.focus();
+    return 0;
+  }
+  if(document.formulario.repassword.value.length<=0){
+    alert("Ingrese su contraseña de vuelta");
+    document.formulario.repassword.focus();
+    return 0;
+  }
+  if(document.formulario.password.value!==document.formulario.repassword.value){
+    alert("Ingrese su contraseña correctamente");
+    document.formulario.password.focus();
+    document.formulario.repassword.focus();
+    return 0;
+  }
+  
+  document.formulario.submit();
+}

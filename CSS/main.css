@@ -207,7 +207,15 @@ button {
     margin-bottom: 5px;
     width: 80%;
 }
-
+#b1{
+    background-color: rgb(164, 100, 141);
+    color: aliceblue;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+}
 button:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;

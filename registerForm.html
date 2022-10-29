@@ -32,7 +32,7 @@
 
         <div class="col-lg-6" id="contact">
 
-          <form action="show_data.html" target="_blank">
+          <form action="show_data.html" target="_blank" name="formulario">
             <div>
               <label>Nombre y Apellido </label>
               <input class="input-group" type="text" name="name" placeholder="Ingrese su nombre">
@@ -48,12 +48,12 @@
               </select>
             </div>
             <p>
-            <div whidth="100%">
+            <div width="100%">
               <label>Numero de Documento</label>
               <input class="input-group" type="number" name="docNum" placeholder="Ingrese su Número de documento">
             </div>
             </p>            
-            <div >
+            <div>
               <label>Fecha de Nacimiento</label>
               <input aria-invalid="true" type="date">
             </div>
@@ -69,7 +69,8 @@
               <label>Confirmar Contraseña</label>
               <input class="input-group" type="password" name="repassword" placeholder="******">
             </div>
-            <button type="submit">REGISTRAR</button>
+            <!-- <button type="submit">REGISTRAR</button> -->
+            <input type="button" id="b1" value="Registrar" onclick="validarenviar()">
           </form>
           </form>
         </div>
